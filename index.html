@@ -366,36 +366,25 @@
                 <div class="col-lg-6 offset-lg-3">
                     
                     <!-- Contact Form -->
-                    <form id="contactForm" data-toggle="validator" data-focus="false"  action="https://formspree.io/f/xgepygwq"
-  method="POST">
-                        <div class="form-group">
-						
-						
-                            <input type="text"  class="form-control-input" id="cname" required>
-                            <label class="label-control"  for="cname">Name</label>  
-                            <div class="help-block with-errors"></div>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" class="form-control-input"  name="_replyto" id="cemail" required>
-                            <label class="label-control" for="cemail">Email</label>
-                            <div class="help-block with-errors"></div>
-                        </div>
-                        <div class="form-group">
-                            <textarea  name="message" class="form-control-textarea"    id="cmessage" required></textarea>
-                            <label class="label-control" for="cmessage">Your message</label>
-                            <div class="help-block with-errors"></div>
-                        </div>
+                   <form
+  action="https://formspree.io/f/xgepygwq"
+  method="POST"
+>
+  <label>
+    Your email:
+    <input type="text" name="_replyto">
+  </label>
+  <label>
+    Your message:
+    <textarea name="message"></textarea>
+  </label>
+
                         <div class="form-group checkbox">
                             <input type="checkbox" id="cterms" value="Agreed-to-Terms" required>I have read and agree to Movie's stated conditions in <a href="privacy-policy.html">Privacy Policy</a> and <a href="terms-conditions.html">Terms Conditions</a> 
                             <div class="help-block with-errors"></div>
                         </div>
-                        <div class="form-group">
-                            <button type="submit" class="form-control-submit-button">SUBMIT MESSAGE</button>
-                        </div>
-                        <div class="form-message">
-                            <div   type="submit" id="cmsgSubmit" class="h3 text-center hidden"></div>
-                        </div>
-                    </form>
+                        <button type="submit">Send</button>
+</form>
                     <!-- end of contact form -->
 
                 </div> <!-- end of col -->
